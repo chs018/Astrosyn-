@@ -2,7 +2,7 @@ ASTROSYNC
 
 *AstroSync* is a dynamic space-themed educational web application designed to sync users with the cosmos. It features daily astronomical events, a 50-year celestial calendar, a cosmic AI chatbot, real-time ISS tracking, NASA’s APOD display, and a beautiful animated background of twinkling stars and comets. 
 
-<img width="321" alt="Screenshot 2025-07-05 174139" src="https://github.com/user-attachments/assets/d15c66c7-f56c-4788-81fd-a5406d88ad31" /> 
+
 
 ##features
 - “Animated Space Background” (twinkling stars + flying comets)
@@ -108,9 +108,12 @@ Gemini AI Platform
 📄 License 
 This project is open-source under the MIT License. 
 
-✨ Project by 
-P.Nikshitha Sri 
-Harshini Shree 
+✨ Project by
+
+P.Nikshitha Sri
+
+Harshini Shree
+
 Annapureddy Madhuri 
 
 BY:TEAM PIXEL PIONNEERS
