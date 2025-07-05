@@ -17,11 +17,9 @@ ASTROSYNC
 
 - “Daily Space Events (1975–2025)” from JSON database 
 *As per the selected date from the calendar the astronomical event is displayed.*
+<img width="449" alt="Screenshot 2025-07-05 174758" src="https://github.com/user-attachments/assets/55604316-2fce-4836-a0c4-a055d53c682e" />
 
 <img width="304" alt="Screenshot 2025-07-05 174638" src="https://github.com/user-attachments/assets/d210da7f-e49e-43b2-8084-61437ba99009" />
-
-
-<img width="449" alt="Screenshot 2025-07-05 174758" src="https://github.com/user-attachments/assets/55604316-2fce-4836-a0c4-a055d53c682e" />
 
 - Cosmic Prediction Generator
 <img width="325" alt="Screenshot 2025-07-05 174946" src="https://github.com/user-attachments/assets/ecdfd99d-299c-46cc-96c1-d2aa69c541e1" />
@@ -112,7 +110,7 @@ This project is open-source under the MIT License.
 
 P.Nikshitha Sri
 
-Harshini Shree
+Harshini Shree C
 
 Annapureddy Madhuri 
 
