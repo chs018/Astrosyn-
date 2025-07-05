@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(120deg, #020202, #0c0a1a, #1a002f);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Twinkling Stars in multiple colors */
+#space-bg::before {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background-image:
+    radial-gradient(#ffffff 1px, transparent 1px),
+    radial-gradient(#8ae9ff 1px, transparent 1px),
+    radial-gradient(#ff8aff 1px, transparent 1px),
+    radial-gradient(#faff8a 1px, transparent 1px),
+    radial-gradient(#8affc1 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position:
+    0 0,
+    40px 40px,
+    20px 60px,
+    60px 20px,
+    70px 70px;
+  animation: twinkle 6s ease-in-out infinite;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+
+@keyframes twinkle {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, -10px); }
+}
+
+/* Glowing Neon Comets */
+.comet {
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6ec4, transparent);
+  box-shadow: 0 0 6px #ff6ec4;
+  animation: flyby 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes flyby {
+  0% {
+    top: -10%;
+    left: -10%;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: 110%;
+    left: 110%;
+    transform: rotate(45deg);
+  }
+}
+@keyframes twinkle {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+  }
+}
+
+

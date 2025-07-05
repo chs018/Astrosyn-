@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrosync</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-black text-white font-sans">
+  <div id="space-bg" class="fixed inset-0 -z-10">
+    <div class="comet" style="top: 20%; left: -10%; animation-delay: 0s;"></div>
+    <div class="comet" style="top: 40%; left: -20%; animation-delay: 2s;"></div>
+    <div class="comet" style="top: 60%; left: -30%; animation-delay: 4s;"></div>
+  </div>
+  <div class="fixed inset-0 -z-20 opacity-30">
+    <img src="https://www.solarsystemscope.com/textures/download/8k_stars_milky_way.jpg"
+      class="w-full h-full object-cover" />
+  </div>
+
+  <nav class="p-4 flex justify-between items-center bg-opacity-70 bg-black fixed w-full top-0 z-50">
+    <h1 class="text-xl font-bold">🌌 Astrosync</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#today">Today</a></li>
+      <li><a href="#weekly">Weekly</a></li>
+      <li><a href="#prediction">Prediction</a></li>
+      <li><a href="#apod">APOD</a></li>
+      <li><a href="#satellite">ISS</a></li>
+    </ul>
+  </nav>
+
+  <section class="pt-24 text-center">
+    <h2 class="text-4xl font-bold">Explore the Universe</h2>
+    <p class="text-gray-300">Interactive daily astronomy insights</p>
+    <p class="text-pink-400 text-lg" id="live-date"></p>
+  </section>
+
+  <section id="space-calendar" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🗓️ Space Calendar (1975–2025)</h3>
+    <input type="date" id="event-date" class="p-2 bg-gray-800 text-white rounded" min="1975-01-01" max="2025-12-31">
+    <div id="event-result" class="mt-4 text-gray-300"></div>
+  </section>
+
+
+  <section id="today" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🔭 Today's Highlights</h3>
+    <ul id="daily-events" class="list-disc ml-6 text-gray-300"></ul>
+  </section>
+
+  <section id="weekly" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🗓️ Weekly Celestial Events</h3>
+    <div id="weekly-calendar" class="grid grid-cols-2 md:grid-cols-7 gap-4 text-sm text-gray-200"></div>
+  </section>
+
+  <section id="prediction" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🔮 Cosmic Prediction</h3>
+    <p id="prediction-text" class="italic text-gray-300"></p>
+  </section>
+
+  <section id="apod" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🌌 NASA Astronomy Picture of the Day</h3>
+    <div id="apod-container" class="text-gray-300"></div>
+  </section>
+
+  <section id="satellite" class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">🛰️ ISS Live Tracker</h3>
+    <div id="satellite-data" class="text-gray-300 mb-4">Loading...</div>
+    <iframe src="https://iss-sim.spacex.com/" class="w-full h-96 rounded"></iframe>
+  </section>
+
+  <div id="chatbot" class="fixed bottom-6 right-6">
+    <button id="toggle-chat" class="bg-blue-600 text-white p-3 rounded-full shadow-lg">💬</button>
+    <div id="chat-box" class="hidden bg-gray-900 p-4 rounded-lg w-80 max-h-[400px] overflow-y-auto">
+      <div id="chat-window" class="text-sm text-white space-y-2"></div>
+      <input id="user-input" type="text" class="w-full mt-2 p-2 bg-gray-800 border border-gray-700 rounded"
+        placeholder="Ask AstroBot..." />
+    </div>
+  </div>
+
+  <footer class="p-4 text-center text-gray-500 border-t border-gray-700"></footer>
+<script src="script.js"></script>
+<script type="module" src="chat.js"></script>
+
+</body>
+
+</html>
